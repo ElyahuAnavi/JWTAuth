@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // In a real app, save the secret key in the environment file
-const secretKey = process.env.SECRET_KEY | "your_secret_key";
+const secretKey = process.env.SECRET_KEY || "your_secret_key";
 
 // Mock db
 const users = [];
